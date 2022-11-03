@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LockHouse</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="shortcut icon" href="../../CSS/Images_gifs/iconlockHouse.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="Logo">
+            <img src="../../CSS/Images_gifs/LockHouse.gif" alt="Logo LockHouse">
+        </div>
+    </header>
+    <main class="pag_allMovies">
+        
+        <video autoplay loop id="video_box" preload="metadata" poster="../../CSS/Images_gifs/rhaenyra.jpg" >
+            <source src="../../videos/House of the Dragon _ Official Trailer _ HBO Max.mp4" type="video/mp4"
+            style="z-index: 3;">
+        </video>
+
+        <nav>
+            <ul>
+            
+                <li><a href="../paginaPrincipal.html">Principal</a> </li>
+                <li><a href="../telaTodosOsFilmes.html">Filmes</a> </li>
+                <li><a href="#">Trailers</a> </li>
+                <li><a href="#">Trilha Sonora</a> </li>
+                <li><a href="#">Contato</a> </li>
+                <li><a href="#">Sobre</a> </li>
+                <button id="btn_princ_video" onclick="myFunction()">Play</button>
+            </ul>
+        </nav>
+
+        <div id="movies">
+
+            <h1 id="titulo_acao"><a href="">Ação</a></h1>
+            <section id="acao">
+                <div class="movies_sub_acao">
+                    <a href="../sub_paginas/pagina_john_wick.html"><div>
+                    </div></a> 
+                </div>
+                <div class="movies_sub_acao">
+                    <a href="../sub_paginas/pagina_top_gun.html"><div>
+                    </div></a>
+                </div>
+                <div class="movies_sub_acao">
+                    <a href="../sub_paginas/pagina_efeito_fallout.html"><div>
+                    </div></a>
+                </div>
+                <div class="movies_sub_acao">
+                    <a href="../sub_paginas/pagina_esquadrao6.html"><div>
+                    </div></a>
+                </div>
+                <div class="movies_sub_acao">
+                    <a href="../sub_paginas/pagina_tomb_raider.html"><div>
+                    </div></a>
+                </div>
+                
+            </section>
+            </div>
+
+    </main>
+    <script>
+        var video = document.getElementById("video_box");
+        var btn = document.getElementById("btn_princ_video");
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+        </script>
+
+</body>
+</html>

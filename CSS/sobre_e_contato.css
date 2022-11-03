@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'rajd';
+    src: url('Fonts/Rajdhani-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    /* Color */
+    --Amarelo-cor-logo:  #FDBA12;
+    --Cinza-cor-fundo:  #22252A;
+    --Cinza-cor-auxiliar:  #2D3035;
+    --preto-auxiliar:  #000000;
+    --branco:  #FFFFFF;
+
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+main{
+    width: 900px;
+    height: 700px;
+    background-color: rgb(236, 236, 236);
+    margin: auto;
+
+    border-radius: 10px 10px 0 0;
+}
+nav{
+    height: 700px;
+    border-right:  2px solid black;
+}
+nav ul{
+    left:230px;
+    top: 200px;
+}
+
+nav ul li a{
+    color: black;
+    border: 1px solid black;
+}
+
+nav ul li a:hover{
+    color: white;
+    border: 2px solid black;
+}
+
+.contato_enviar_btn{
+    padding: 5px 10px 5px 10px;
+}
+footer{
+    width: 800px;
+}
+
+/*----------------------contato_pag-----------------------*/
+
+#contato_pag section{
+    margin-left: 300px;
+    font-size: 1.3em;
+}
+
+#contato_pag section h1{
+    font-size: 3.0em;
+}
+
+/*-----------------------sobre_pag---------------------*/
+
+#sobre_pag section{
+    margin-left: 200px;
+    font-size: 1.3em;
+
+}
+
+#autor{
+    display: flex;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+#sobre_pag section h1{
+    font-size: 3.0em;
+}
+
+#sobre_pag section #autor .img_autor{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#sobre_pag section #autor .autor_inform ul{
+    margin-left: 30px;
+    text-decoration: none;
+    list-style: none;
+}

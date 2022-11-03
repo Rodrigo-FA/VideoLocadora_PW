@@ -1,0 +1,486 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'rajd';
+    src: url('Fonts/Rajdhani-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    /* Color */
+    --Amarelo-cor-logo:  #FDBA12;
+    --Cinza-cor-fundo:  #22252A;
+    --Cinza-cor-auxiliar:  #2D3035;
+    --preto-auxiliar:  #000000;
+    --branco:  #FFFFFF;
+
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: var(--Cinza-cor-fundo);
+    font-family: 'rajd';
+    background-image: url(Images_gifs/az-subtle.png);
+}
+
+header{
+    height: 100px;
+    background-color: #0000007e;
+    background-image:url(Images_gifs/black-linen.png);
+    margin-bottom: 50px;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.211);
+}
+
+#Logo{
+    margin-left: 9px;
+    margin-top: 9px;
+    
+    display: inline-table;
+    color: white;
+    
+}
+
+#Logo > img{
+    width: 150px;
+}
+
+main.pag_index{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    padding: 50px;
+    margin-top: 50px;
+
+    background-color: var(--branco);
+
+    border-radius: 10px;
+    box-shadow: 1px 15px 15px rgba(0, 0, 0, 0.568) ;
+    margin: auto;
+    align-items: center;
+}
+
+form.Log{
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main.pagina_todos_filmes{
+    position: relative;
+    height: 700px;
+    width: 300px;
+    padding: 50px;
+    margin-top: 50px;
+
+    background-color: var(--branco);
+
+    border-radius: 10px;
+    box-shadow: 1px 15px 15px rgba(0, 0, 0, 0.568) ;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+main.pagina_todos_filmes form > p{
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+main.pagina_todos_filmes form > p > label{
+   margin-right: 15px;
+   
+}
+
+ button{
+    padding: 4px;
+    margin-left: 23px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.164);
+}
+
+main.pag_allMovies{
+    width: 85%;
+    height: 1800px;
+    
+    border-radius: 10px;
+    background-color: rgb(23, 23, 23);
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.13);
+
+    position: relative;
+}
+
+ nav{
+    background-color: rgb(17, 17, 17) transparent;
+    max-width: 150px;
+    width: 100%;
+    height: 282px;
+    position: absolute;
+    border-radius: 10px 0px 0px 0px;
+
+    z-index: 1;
+
+
+}
+
+nav ul {
+    padding:0;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li:hover{
+    background-color:#24262a;
+
+}
+
+nav > ul > li > a{
+    color: white;
+    font-size: 1.3em;
+    display: block;
+    padding: 15px;
+
+    text-decoration: none;
+
+
+}
+
+.pag_allMovies > video#video_box{
+
+    background-image: url(../CSS/Images_gifs/rhaenyra.jpg);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    border-radius: 10px 10px 0px 0px;
+
+    z-index: 0;
+    background-size: cover;
+}
+
+#btn_princ_video{
+    margin-top: 15px;
+    width: 70px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+
+    
+}
+
+.pag_allMovies #movies{
+    background-color: transparent;
+
+    
+    height: 100%;
+    width: 100%;
+}
+#em_alta, #acao, #aventura, #ficcao_cientifica{
+    display: flex;
+    position: relative;
+    padding: 10px;
+
+    background-color: #000000;
+    border: 1px solid white;
+    margin-bottom: 100px;
+    top: 500px;
+    
+    overflow: auto;
+
+
+}
+
+.pag_allMovies > div > section > div{
+
+    width: 260px;
+    height: 150px;
+    background-color: #000000;
+    min-width: 220px;
+
+}
+
+#titulo_em_alta, #titulo_acao, #titulo_aventura, #titulo_ficcao_cientifica{
+    position: relative;
+
+    top: 490px;
+    left: 30px;
+}
+
+#titulo_em_alta>a, #titulo_acao>a, #titulo_aventura>a, #titulo_ficcao_cientifica>a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+#titulo_em_alta>a:hover, #titulo_acao>a:hover, #titulo_aventura>a:hover, #titulo_ficcao_cientifica>a:hover{
+    text-decoration: underline;
+}
+
+.pag_allMovies .movies_sub_em_alta, .movies_sub_acao, .movies_sub_aventura, .movies_sub_ficcao_cientifica{
+    margin-left: 10px;
+    margin-right: 10px;
+
+    background-size: cover;
+    background-position: center center;
+}
+
+.pag_allMovies:hover .movies_sub_em_alta:hover, .movies_sub_acao:hover, .movies_sub_aventura:hover, .movies_sub_ficcao_cientifica:hover{
+    border: 2px solid var(--Amarelo-cor-logo);
+    border-style:inset ;
+}
+
+/* Filmes Em alta*/
+.movies_sub_em_alta:nth-child(1){
+    background-image: url("../CSS/Images_gifs/poster_hof_the_dragon.jpg");
+}
+
+.movies_sub_em_alta:nth-child(2){
+    background-image: url("../CSS/Images_gifs/poster_uncharted.jpg");
+}
+
+.movies_sub_em_alta:nth-child(3){
+    background-image: url("../CSS/Images_gifs/poster_tombraider.jpg");
+}
+
+.movies_sub_em_alta:nth-child(4){
+    background-image: url("Images_gifs/poster_esquadrao6.jpg");
+}
+
+.movies_sub_em_alta:nth-child(5){
+    background-image: url("../CSS/Images_gifs/poster_adao_negro.jpg");
+}
+
+/*Filmes de Ação*/
+.movies_sub_acao:nth-child(1){
+    background-image: url("Images_gifs/poster_john_wick3.jpg");
+}
+
+.movies_sub_acao:nth-child(2){
+    background-image: url("../CSS/Images_gifs/posterTopGunMaverick.jpg");
+}
+
+.movies_sub_acao:nth-child(3){
+    background-image: url("../CSS/Images_gifs/posterMissaoImpossivelEfeitoFallout.jpg");
+}   
+
+.movies_sub_acao:nth-child(4){
+    background-image: url("../CSS/Images_gifs/poster_esquadrao6.jpg");
+}
+
+.movies_sub_acao:nth-child(5){
+    background-image: url("../CSS/Images_gifs/poster_tombraider.jpg");
+}
+
+/*Filmes de Aventura*/
+.movies_sub_aventura:nth-child(1){
+    background-image: url("../CSS/Images_gifs/posterDesolacaoDeSmaug.jpg");
+}
+
+.movies_sub_aventura:nth-child(2){
+    background-image: url("../CSS/Images_gifs/posteraVingancadeSalazar.jpg");
+}
+
+.movies_sub_aventura:nth-child(3){
+    background-image: url("../CSS/Images_gifs/posterWarcraft.jpg");
+}
+
+.movies_sub_aventura:nth-child(4){
+    background-image: url("../CSS/Images_gifs/posterAsAventurasDeTinTin.jpg");
+}
+
+.movies_sub_aventura:nth-child(5){
+    background-image: url("../CSS/Images_gifs/Jumanjiposter.jpg");
+}
+
+/*Filmes Ficção Cientifica*/
+.movies_sub_ficcao_cientifica:nth-child(1){
+    background-image: url("../CSS/Images_gifs/poster_perdidoemmarte.jpg");
+}
+
+.movies_sub_ficcao_cientifica:nth-child(2){
+    background-image: url("../CSS/Images_gifs/interestelaPoster.jpg");
+}
+
+.movies_sub_ficcao_cientifica:nth-child(3){
+    background-image: url("../CSS/Images_gifs/matrixRessurections_Poster.jpg");
+}
+
+.movies_sub_ficcao_cientifica:nth-child(4){
+    background-image: url("../CSS/Images_gifs/posterVivaMorraRepita.jpg");
+    background-position: left center;
+}
+
+.movies_sub_ficcao_cientifica:nth-child(5){
+    background-image: url("../CSS/Images_gifs/reinoAmeacado_poster.jpg");
+}
+
+.movies_sub_em_alta > a > div, .movies_sub_aventura > a > div, .movies_sub_ficcao_cientifica > a > div, .movies_sub_acao > a > div{
+    width: 240px;
+    height: 140px;
+}
+
+/*------------------------------- Pagina Principal -------------------------------------*/
+
+#pagina_principal{
+    
+    position: relative;
+    height: 650px;
+    width: 85%;
+    padding: 50px;
+    margin-top: 50px;
+
+    background-color: rgb(236, 236, 236);
+
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 1px 15px 15px rgba(0, 0, 0, 0.127) ;
+    margin: auto;
+    align-items: center;
+    
+}
+
+#pagina_principal > nav >ul > li > a{
+    border: 2px solid black;
+    color: #000000;
+}
+#pagina_principal > nav >ul > li > a:hover{
+    color: white;
+    border: 3px solid black;
+}
+
+.logo_central > img{
+    height: 250px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(123, 123, 123);
+
+    border: 5px solid black;
+    border-style: inset;
+    border-radius: 15px;
+
+    padding-right: 20px;
+    
+}
+
+.logo_central{
+    position: relative;
+}
+
+.p_paginaprinc{  
+    
+    position:relative;
+    display: block;
+    color: black;
+    font-size: 1.3em;
+    width: 400px;
+
+    top: 400px;
+    left: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer{
+    background-color: #000000;
+    width: 85%;
+    height: 50px;
+    
+    margin: auto;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 0px 0px 10px 10px;
+
+    color: #FFFFFF;
+    font-size: 1.3em;
+}
+
+/* Páginas de Especificação dos filmes*/
+
+main.paginas_filmes{
+    position: relative;
+    height: 700px;
+    width: 85%;
+    padding: 50px;
+    margin-top: 50px;
+
+    background-color: rgb(236, 236, 236);
+
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 1px 15px 15px rgba(0, 0, 0, 0.127) ;
+    margin: auto;
+    align-items: center;
+    
+}
+
+.container_poster_vertic{
+    width: 600px;
+    height: 400px;
+
+    position: relative;
+    display: flex;
+    padding-left: 400px;
+    z-index: 0;
+}
+
+.poster_vertic{
+    width: 250px;
+    height: 400px;
+    
+
+    background-color: #000000;
+    background-size: cover;
+    box-shadow: 5px 5px 5px inset rgba(0, 0, 0, 0.237);
+    border: 1px solid black;
+
+    background-position: center center;
+
+}
+
+.container_poster_vertic > p{
+    color: var(--branco);
+    padding-left: 10px;
+    background-color: #22252A;
+    padding: 10px;
+    height: 200px;
+
+    min-width: 275.25px;
+    
+}
+
+.container_poster_vertic > p > a > input{
+    padding: 2px 5px;
+}
+
+.p_individual_filmes{
+    margin-top: 30px;
+    color: var(--preto-auxiliar);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+
+    padding-right: 30px;
+}
+.paginas_filmes nav > ul > li > a{
+
+    color: #000000;
+    border: 2px solid black;
+}
+
+.paginas_filmes nav > ul > li > a:hover{
+    color: white;
+    border: 3px solid black;
+}
+

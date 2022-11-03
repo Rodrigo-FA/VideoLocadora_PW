@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LockHouse</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../CSS/Images_gifs/iconlockHouse.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="Logo">
+            <img src="../CSS/Images_gifs/LockHouse.gif" alt="Logo LockHouse">
+        </div>
+    </header>
+    <main class="pag_allMovies">
+        
+        <video autoplay loop id="video_box" preload="metadata" poster="../CSS/Images_gifs/rhaenyra.jpg" >
+            <source src="../videos/House of the Dragon _ Official Trailer _ HBO Max.mp4" type="video/mp4"
+            style="z-index: 3;">
+        </video>
+
+        <nav>
+            <ul>
+            
+                <li><a href="paginaPrincipal.html">Principal</a> </li>
+                <li><a href="telaTodosOsFilmes.html">Filmes</a> </li>
+                <li><a href="trailers.html">Trailers</a> </li>
+                <li><a href="trilhaSonora.html">Trilha Sonora</a> </li>
+                <li><a href="contato.html">Contato</a> </li>
+                <li><a href="sobre.html">Sobre</a> </li>
+                <button id="btn_princ_video" onclick="myFunction()">Play</button>
+            </ul>
+        </nav>
+
+        <div id="movies">
+            <h1 id="titulo_em_alta"><a href="paginas_genero/em_alta.html">Em Alta</a></h1>
+    
+            <section id="em_alta">
+                
+                <div class="movies_sub_em_alta">
+                    <a href="sub_paginas/pagina_house_of_the_dragon.html"><div>
+                    </div></a>
+                </div>
+                
+                <div class="movies_sub_em_alta">
+                    <a href="sub_paginas/pagina_uncarted.html"><div>
+                    </div></a>
+                </div>
+                
+                <div class="movies_sub_em_alta">
+                    <a href="sub_paginas/pagina_tomb_raider.html"><div>
+                    </div></a>
+                </div>
+                <div class="movies_sub_em_alta">
+                    <a href="sub_paginas/pagina_esquadrao6.html"><div>
+                    </div></a>
+                </div>
+                <div class="movies_sub_em_alta">
+                    <a href="sub_paginas/pagina_black_adam.html"><div>
+                    </div></a>
+                </div>
+            </section>
+
+            <h1 id="titulo_acao"><a href="paginas_genero/acao.html">Ação</a></h1>
+            <section id="acao">
+                <div class="movies_sub_acao">
+                    <a href="sub_paginas/pagina_john_wick.html"><div>
+                    </div></a> 
+                </div>
+                <div class="movies_sub_acao">
+                    <a href="sub_paginas/pagina_top_gun.html"><div>
+                    </div></a>
+                </div>
+                <div class="movies_sub_acao">
+                    <a href="sub_paginas/pagina_efeito_fallout.html"><div>
+                    </div></a>
+                </div>
+                <div class="movies_sub_acao">
+                    <a href="sub_paginas/pagina_esquadrao6.html"><div>
+                    </div></a>
+                </div>
+                <div class="movies_sub_acao">
+                    <a href="sub_paginas/pagina_tomb_raider.html"><div>
+                    </div></a>
+                </div>
+                
+            </section>
+            <h1 id="titulo_aventura"><a href="paginas_genero/aventura.html">Aventura</a></h1>
+            <section id="aventura">
+                 <div class="movies_sub_aventura">
+                    <a href="sub_paginas/pagina_desolacao_smaug.html"><div>
+                    </div></a>
+                 </div> 
+                 <div class="movies_sub_aventura">
+                    <a href="sub_paginas/pagina_vinganca_de_salazar.html"><div>
+                    </div></a>
+                 </div> 
+                 <div class="movies_sub_aventura">
+                    <a href="sub_paginas/pagina_warcraft.html"><div>
+                    </div></a>
+                 </div> 
+                 <div class="movies_sub_aventura">
+                    <a href="sub_paginas/pagina_as_aventuras_de_tintin.html"><div>
+                    </div></a>
+                 </div> 
+                 <div class="movies_sub_aventura">
+                    <a href="sub_paginas/pagina_jumanji_bv_a_selva.html"><div>
+                    </div></a>
+                 </div> 
+            </section>
+            
+            <h1 id="titulo_ficcao_cientifica"><a href="paginas_genero/ficcao_cientifica.html">Ficção Cientifica</a></h1>
+            <section id="ficcao_cientifica">
+                <div class="movies_sub_ficcao_cientifica">
+                    <a href="sub_paginas/pagina_perdido_em_marte.html"><div>
+                    </div></a>
+                </div> 
+                <div class="movies_sub_ficcao_cientifica">
+                    <a href="sub_paginas/pagina_interestellar.html"><div>
+                    </div></a>
+                </div> 
+                <div class="movies_sub_ficcao_cientifica">
+                    <a href="sub_paginas/pagina_matrix.html"><div>
+                    </div></a>
+                </div> 
+                
+                <div class="movies_sub_ficcao_cientifica">
+                    <a href="sub_paginas/pagina_no_limite_do_amanha.html"><div>
+                    </div></a>
+                </div> 
+                <div class="movies_sub_ficcao_cientifica">
+                    <a href="sub_paginas/pagina_jurassic_world.html"><div>
+                    </div></a>
+                </div> 
+            </section>
+        </div>
+
+    </main>
+    <script>
+        var video = document.getElementById("video_box");
+        var btn = document.getElementById("btn_princ_video");
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+        </script>
+
+</body>
+</html>
